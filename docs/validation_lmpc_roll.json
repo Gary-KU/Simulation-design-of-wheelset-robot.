@@ -1,0 +1,201 @@
+{
+  "environment": {
+    "matlab_release": "2023b",
+    "controller": "all",
+    "required_products": [
+      "MATLAB",
+      "Simulink",
+      "Simscape",
+      "Simscape Multibody",
+      "Control System Toolbox",
+      "Model Predictive Control Toolbox"
+    ],
+    "platform": "PCWIN64",
+    "checked_at": "2026-10-11 23:45:33"
+  },
+  "parameters": {
+    "Ts": 0.005,
+    "prediction_horizon": 20,
+    "control_horizon": 20,
+    "leg_length_m": 0.1,
+    "wheel_radius_m": 0.02,
+    "body_mass_kg": 1.45,
+    "body_length_m": 0.12,
+    "body_height_m": 0.05,
+    "body_width_m": 0.1,
+    "leg_mass_kg": 0.0248,
+    "support_feedforward_n": 7.22652,
+    "joint_torque_limit_nm": 0.68,
+    "support_kp_n_m": 100,
+    "support_ki_n_m_s": 50,
+    "support_kd_n_s_m": 20,
+    "wheel_mass_kg": 0.25132741228718347,
+    "wheel_inertia": 5.02654824574367E-5,
+    "leg_inertia": 1.7928334E-5,
+    "body_inertia": 0.0020420833333333328,
+    "Q": [
+      400,
+      15,
+      20,
+      10,
+      200,
+      10
+    ],
+    "R": [
+      1,
+      0.5
+    ],
+    "mv_rate_weight": [
+      0.02,
+      0.02
+    ],
+    "torque_limit_nm": [
+      0.03,
+      0.12
+    ],
+    "torque_step_nm": [
+      0.03,
+      0.03
+    ],
+    "reference": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "roll_parameters": {
+    "enable": 1,
+    "target_deg": 0,
+    "kp_n_rad": 6,
+    "kd_n_s_rad": 5.5,
+    "rate_filter_tau_s": 0.002,
+    "force_limit_n": 2,
+    "initial_roll_deg": 0
+  },
+  "cases": {
+    "nominal": {
+      "passed": true,
+      "roll_final_deg": 0.057295137048274922,
+      "roll_rms_last_s_deg": 0.052584749607028657,
+      "pitch_final_deg": 0.00016160578799571213,
+      "speed_final_m_s": -1.5125407553305316E-5,
+      "leg_length_final_m": [
+        0.10011715081002436,
+        0.10011716810255404
+      ],
+      "wheel_peak_nm": [
+        0.0043281848257805677,
+        0.0043360105916825376
+      ],
+      "joint_peak_nm": [
+        0.68,
+        0.68,
+        0.68,
+        0.68
+      ],
+      "roll_opposite_peak_deg": 0,
+      "roll_settle_02deg_s": 0,
+      "qp_ok": true
+    },
+    "braking": {
+      "passed": true,
+      "roll_final_deg": 0.057295773746370078,
+      "roll_rms_last_s_deg": 0.057295389855519165,
+      "pitch_final_deg": 0.0023334622218481888,
+      "speed_final_m_s": 9.6403104657614326E-6,
+      "leg_length_final_m": [
+        0.10011266499290949,
+        0.1001126830148346
+      ],
+      "wheel_peak_nm": [
+        0.03,
+        0.03
+      ],
+      "joint_peak_nm": [
+        0.68,
+        0.68,
+        0.68,
+        0.68
+      ],
+      "roll_opposite_peak_deg": 0,
+      "roll_settle_02deg_s": 0,
+      "qp_ok": true
+    },
+    "pitch_3deg": {
+      "passed": true,
+      "roll_final_deg": 0.057295771902406041,
+      "roll_rms_last_s_deg": 0.046734891146415186,
+      "pitch_final_deg": -0.0012502773165740048,
+      "speed_final_m_s": 0.00014685070493051323,
+      "leg_length_final_m": [
+        0.100118376358722,
+        0.10011839392779856
+      ],
+      "wheel_peak_nm": [
+        0.03,
+        0.03
+      ],
+      "joint_peak_nm": [
+        0.68,
+        0.68,
+        0.68,
+        0.68
+      ],
+      "roll_opposite_peak_deg": 0,
+      "roll_settle_02deg_s": 0,
+      "qp_ok": true
+    },
+    "combined_pos": {
+      "passed": true,
+      "roll_final_deg": 0.05729121788317449,
+      "roll_rms_last_s_deg": 0.057277680856401052,
+      "pitch_final_deg": 0.00098704993688029,
+      "speed_final_m_s": 0.00019186283916385673,
+      "leg_length_final_m": [
+        0.10012078344066787,
+        0.10012080149379038
+      ],
+      "wheel_peak_nm": [
+        0.03,
+        0.03
+      ],
+      "joint_peak_nm": [
+        0.68,
+        0.68,
+        0.68,
+        0.68
+      ],
+      "roll_opposite_peak_deg": 0.19133814601677065,
+      "roll_settle_02deg_s": 0.23356477367987855,
+      "qp_ok": true
+    },
+    "combined_neg": {
+      "passed": true,
+      "roll_final_deg": -0.05727430958805578,
+      "roll_rms_last_s_deg": 0.056730085117637864,
+      "pitch_final_deg": 0.004516932253094734,
+      "speed_final_m_s": -0.00015764802864316686,
+      "leg_length_final_m": [
+        0.10011761723317678,
+        0.1001176136212476
+      ],
+      "wheel_peak_nm": [
+        0.03,
+        0.03
+      ],
+      "joint_peak_nm": [
+        0.68,
+        0.68,
+        0.68,
+        0.68
+      ],
+      "roll_opposite_peak_deg": 0.18974545093975909,
+      "roll_settle_02deg_s": 0.2287779794650564,
+      "qp_ok": true
+    }
+  },
+  "passed": true
+}

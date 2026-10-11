@@ -1,0 +1,109 @@
+{
+  "environment": {
+    "matlab_release": "2023b",
+    "controller": "all",
+    "required_products": [
+      "MATLAB",
+      "Simulink",
+      "Simscape",
+      "Simscape Multibody",
+      "Control System Toolbox",
+      "Model Predictive Control Toolbox"
+    ],
+    "platform": "PCWIN64",
+    "checked_at": "2026-10-11 23:45:33"
+  },
+  "parameters": {
+    "total_mass_kg": 1.45,
+    "non_body_mass_kg": 0.35,
+    "body_mass_kg": 1.1,
+    "body_length_m": 0.12,
+    "body_width_m": 0.15,
+    "body_height_m": 0.05,
+    "wheel_radius_m": 0.026,
+    "wheel_width_m": 0.024,
+    "plate_thickness_m": 0.007,
+    "plate_height_m": 0.02,
+    "upper_link_m": 0.05,
+    "lower_link_m": 0.105,
+    "hip_gap_m": 0.06,
+    "leg_length_m": 0.1,
+    "wheel_torque_limit_nm": 0.03,
+    "joint_torque_limit_nm": 0.68,
+    "Ts": 0.005,
+    "length_min_m": 0.04,
+    "length_max_m": 0.14,
+    "Q": [
+      400,
+      15,
+      20,
+      10,
+      200,
+      10
+    ],
+    "R": [
+      1,
+      0.5
+    ],
+    "support_kp": 100,
+    "support_ki": 50,
+    "support_kd": 20,
+    "gravity_m_s2": 9.80665,
+    "non_body_mass_scale": 0.60435272919345073,
+    "wheel_density_kg_m3": 3021.7636459672535,
+    "plate_density_kg_m3": 483.48218335476059,
+    "wheel_mass_per_side_kg": 0.15401687324240335,
+    "leg_mass_per_side_kg": 0.020983126757596608,
+    "wheel_inertia_per_side": 5.2057703155932324E-5,
+    "leg_inertia_per_side": 1.5169052051845878E-5,
+    "body_pitch_inertia_per_side": 0.00077458333333333329,
+    "support_feedforward_n": 5.5994316800173847,
+    "phi1_initial_deg": 209.84821852182932,
+    "phi4_initial_deg": -29.848218521829303,
+    "passive_initial_deg": -104.4775121859299,
+    "body_initial_height_m": 0.16100000000000003
+  },
+  "max_linear_pole_radius": 0.99574523980846186,
+  "cases": {
+    "standing": {
+      "passed": true,
+      "pitch_final_deg": 3.5872232891997117E-7,
+      "speed_final_m_s": 2.3129726884472645E-6,
+      "leg_length_final_m": [
+        0.10010585016052743,
+        0.10010585024094341
+      ],
+      "wheel_peak_nm": 2.945668344562329E-6,
+      "joint_peak_nm": 0.18946692278416169,
+      "pitch_peak_last_s_deg": 2.3102772449577306E-6,
+      "speed_peak_last_s_m_s": 2.4277804687161017E-6
+    },
+    "pitch_pos_10": {
+      "passed": true,
+      "pitch_final_deg": 0.00034587665725940077,
+      "speed_final_m_s": -0.00042885019260004782,
+      "leg_length_final_m": [
+        0.10001701006301746,
+        0.10001700966462423
+      ],
+      "wheel_peak_nm": 0.03,
+      "joint_peak_nm": 0.23080771980190048,
+      "pitch_peak_last_s_deg": 0.00069757143410349059,
+      "speed_peak_last_s_m_s": 0.0011109632651105314
+    },
+    "pitch_neg_10": {
+      "passed": true,
+      "pitch_final_deg": -0.000381866854122321,
+      "speed_final_m_s": 0.00044951102887092018,
+      "leg_length_final_m": [
+        0.10002329004274162,
+        0.10002329181636445
+      ],
+      "wheel_peak_nm": 0.03,
+      "joint_peak_nm": 0.23080771980190029,
+      "pitch_peak_last_s_deg": 0.00078986457769571639,
+      "speed_peak_last_s_m_s": 0.0012956233804890878
+    }
+  },
+  "passed": true
+}

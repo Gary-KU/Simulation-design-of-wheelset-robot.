@@ -1,0 +1,27 @@
+# MATLAB / Simulink generated data
+**/.cache/
+**/slprj/
+**/sim_cache/
+**/codegen/
+*.slxc
+*.slx.autosave
+*.slx.bak
+*.asv
+*.m~
+*.mex*
+out.mat
+**/results/*
+!**/results/.gitkeep
+
+# Local editor / operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Historical archives are outside the release
+archive/
+backups/
+*.zip

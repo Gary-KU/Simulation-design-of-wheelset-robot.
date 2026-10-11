@@ -1,0 +1,50 @@
+{
+  "snapshot_date": "2026-10-11",
+  "files": [
+    {
+      "path": "lqr/Self_Model_3D.slx",
+      "source_sha256": "eaf8d8b7a312fda1370e39be7fe4b84c642d0f8faf500abf44d84f2cf30933af",
+      "source_saved_at": 1791232881.0380068
+    },
+    {
+      "path": "lqr/init_lqr_model.m",
+      "source_sha256": "33e901ba821d7f7308051a2a4db244120be9da7860af396ce1be2e8168c69821",
+      "source_saved_at": 1791227780.0
+    },
+    {
+      "path": "lqr/lqr_model_parameters.m",
+      "source_sha256": "fb7a05edc55fd0a7653bd13d4e55cd0f5dbdcb19e6d4cbbb5e96473f5ee6f1b9",
+      "source_saved_at": 1791232128.0
+    },
+    {
+      "path": "lmpc_roll/Self_Model_3D_LMPC_Roll.slx",
+      "source_sha256": "7f1b50dfc3859f0eab59696a15533d135f7bf38fcfadf98bd46814cdb72ec4bd",
+      "source_saved_at": 1791226521.7703316
+    },
+    {
+      "path": "lmpc_roll/init_roll_lmpc.m",
+      "source_sha256": "bbf4df8eeca331ca496df49e435ab1fdcc0820179cfc763afc7abff746b2d1a3",
+      "source_saved_at": 1791192264.1486213
+    },
+    {
+      "path": "lmpc_roll/lmpc_parameters.m",
+      "source_sha256": "6e873c78c2bdb1e492a05f37f3b2b62be9c67fc484b5453838e22f7997ef1358",
+      "source_saved_at": 1791226853.612222
+    },
+    {
+      "path": "lmpc_roll/roll_parameters.m",
+      "source_sha256": "2cba149bc2cc2251a2a42c39148e55c9037fdb81cbafb18d35b7285bc0a4c36c",
+      "source_saved_at": 1791191312.0913522
+    },
+    {
+      "path": "lmpc_roll/tests/test_roll_lmpc.m",
+      "source_sha256": "44f96cb61d3369067dcdaf954a12724386dfb6f50fdec30103d5f1cb1ba1b82a",
+      "source_saved_at": 1791226523.0769124
+    },
+    {
+      "path": "lmpc_roll/tests/test_roll_smooth.m",
+      "source_sha256": "f3e462a67be5cadbb160bb2f4f90a5b3161b0b0ea86116264573e59d4b58da39",
+      "source_saved_at": 1791225844.2501726
+    }
+  ]
+}
